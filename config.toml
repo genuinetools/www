@@ -1,0 +1,6 @@
+baseurl = "https://genuinetools.org/"
+languageCode = "en-us"
+title = "genuinetools"
+
+[blackfriday]
+  hrefTargetBlank = true
