@@ -1,0 +1,131 @@
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+}
+.logo {
+    font-family: monospace;
+}
+blockquote {
+    display: block;
+    border-width: 2px 0;
+    border-style: solid;
+    border-color: #eee;
+    padding: 1.5em 0 0.5em;
+    margin: 1.5em 0;
+    position: relative;
+}
+blockquote:before {
+    /*content: '\201C';*/
+    position: absolute;
+    top: 0em;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    width: 3rem;
+    height: 2rem;
+    font: 6em/1.08em 'PT Sans', sans-serif;
+    color: #666;
+    text-align: center;
+}
+blockquote:after {
+    content: "\2013 \2003" attr(cite);
+    display: block;
+    text-align: right;
+    font-size: 0.875em;
+    color: #e74c3c;
+}
+/* Typography Scale */
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+    font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+sup {
+    top: -0.5em;
+}
+p {
+    margin-bottom: 1.5rem
+}
+p.manifest code {
+    display: block;
+    margin-bottom: 1.5rem;
+    max-width: 80ch;
+}
+.hero {
+    background: #263238;
+    color: #ffffff;
+    width: 100%;
+
+}
+.container {
+    display:flex;
+    flex-direction: column;
+    max-width: 80ch;
+    margin:auto;
+    padding: 0 1rem;
+}
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+h1 { font-size: 3rem; }
+h2 { font-size: 2.25rem; }
+h3 { font-size: 1.5rem; }
+h4 { font-size: 1.25rem; }
+h5 { font-size: 1rem; }
+h6 { font-size: .875rem; }
+h1, h2, h3, h4 ,h5, h6 {
+    margin:0;
+    line-height: 1.5;
+}
+/* Forms
+========================================================================== */
+
+/**
+ * 1. Change the font styles in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    /*font-family: sans-serif; /* 1 */
+    font-size: 100%; /* 1 */
+    line-height: 1.15; /* 1 */
+    margin: 0; /* 2 */
+}
+
+a:link {
+    color: #304FFE;
+}
+a:visited {
+    color: #3D5AFE;
+}
+a:hover {
+    color: #651FFF;
+}
+a:active {
+    color: #6200EA;
+}
