@@ -1,316 +1,195 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}">
-  <head>
-    <meta charset="utf-8">
-    <title>{{ .Site.Title }}</title>
+    <head>
+        <meta charset="utf-8">
+        <title>{{ .Site.Title }}</title>
 
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet" />
+        <link href="/main.css" rel="stylesheet" />
+    </head>
+    <body>
+        <header class="hero">
+            <div class="container">
+                <h1>Genuine Tools<a href="https://github.com/genuinetools"></a></h1>
+                <p>We are the home of quality software with a focus on simplicity, usability, security and minimalism.</p>
+            </div>
+        </header>
 
-    <style>
-     body {
-       font-family: 'Source Sans Pro', sans-serif;
-       margin: 0;
-     }
-     .logo {
-       font-family: monospace;
-     }
-     blockquote {
-       display: block;
-       border-width: 2px 0;
-       border-style: solid;
-       border-color: #eee;
-       padding: 1.5em 0 0.5em;
-       margin: 1.5em 0;
-       position: relative;
-     }
-     blockquote:before {
-       content: '\201C';
-       position: absolute;
-       top: 0em;
-       left: 50%;
-       transform: translate(-50%, -50%);
-       background: #fff;
-       width: 3rem;
-       height: 2rem;
-       font: 6em/1.08em 'PT Sans', sans-serif;
-       color: #666;
-       text-align: center;
-     }
-     blockquote:after {
-       content: "\2013 \2003" attr(cite);
-       display: block;
-       text-align: right;
-       font-size: 0.875em;
-       color: #e74c3c;
-     }
-     /* Typography Scale */
-     /**
-      * Add the correct font size in all browsers.
-      */
+        <div class="container"><blockquote>No bullshit, no politics, all genuine container tooling.</blockquote></div>
+        <div class="container">
+            <h5>Our projects abide by the following values:</h5>
+            <ul>
+                <li>Genuine solutions in a non-shitty way.</li>
+                <li>Simplicity.</li>
+                <li>Minimal dependencies.</li>
+                <li>Installable by a single binary -OR- a single binary in a container.</li>
+                <li>Easy to install.</li>
+                <li>Minimal design.</li>
+                <li>Clean, readable, auditable code.
+                    <ul>
+                        <li>Made by hackers with love that were just having fun.</li>
+                    </ul>
+                </li>
+            </ul>
 
-     small {
-       font-size: 80%;
-     }
+            <p>
+            Come <a href="https://github.com/genuinetools">build genuinetools</a> with us :)
+            </p>
 
-     /**
-      * Prevent `sub` and `sup` elements from affecting the line height in
-      * all browsers.
-      */
+            <p>
+            <a href="https://releases.genuinetools.org">Download project releases here!</a>
+            </p>
 
-     sub,
-     sup {
-       font-size: 75%;
-       line-height: 0;
-       position: relative;
-       vertical-align: baseline;
-     }
+            <h3>Our github organization is <a href="https://github.com/genuinetools">github.com/genuinetools</a>.</h3>
 
-     sub {
-       bottom: -0.25em;
-     }
+            <h5>
+                So far our projects include:
+            </h5>
+            <ul>
+                <li><a href="https://github.com/genuinetools/1up" target="_blank">1up</a></li>
+                <li><a href="https://github.com/genuinetools/amicontained" target="_blank">amicontained</a></li>
+                <li><a href="https://github.com/genuinetools/apk-file" target="_blank">apk-file</a></li>
+                <li><a href="https://github.com/genuinetools/audit" target="_blank">audit</a></li>
+                <li><a href="https://github.com/genuinetools/bane" target="_blank">bane</a></li>
+                <li><a href="https://github.com/genuinetools/binctr" target="_blank">binctr</a></li>
+                <li><a href="https://github.com/genuinetools/bpfd" target="_blank">bpfd</a></li>
+                <li><a href="https://github.com/genuinetools/bpfps" target="_blank">bpfps</a></li>
+                <li><a href="https://github.com/genuinetools/certok" target="_blank">certok</a></li>
+                <li><a href="https://github.com/genuinetools/contained.af" target="_blank">contained.af</a></li>
+                <li><a href="https://github.com/genuinetools/ghb0t" target="_blank">ghb0t</a></li>
+                <li><a href="https://github.com/genuinetools/img" target="_blank">img</a></li>
+                <li><a href="https://github.com/genuinetools/magneto" target="_blank">magneto</a></li>
+                <li><a href="https://github.com/genuinetools/netns" target="_blank">netns</a></li>
+                <li><a href="https://github.com/genuinetools/pepper" target="_blank">pepper</a></li>
+                <li><a href="https://github.com/genuinetools/pkg" target="_blank">pkg</a></li>
+                <li><a href="https://github.com/genuinetools/reg" target="_blank">reg</a></li>
+                <li><a href="https://github.com/genuinetools/releases" target="_blank">releases</a></li>
+                <li><a href="https://github.com/genuinetools/riddler" target="_blank">riddler</a></li>
+                <li><a href="https://github.com/genuinetools/sshb0t" target="_blank">sshb0t</a></li>
+                <li><a href="https://github.com/genuinetools/udict" target="_blank">udict</a></li>
+                <li><a href="https://github.com/genuinetools/upmail" target="_blank">upmail</a></li>
+                <li><a href="https://github.com/genuinetools/weather" target="_blank">weather</a></li>
+            </ul>
 
-     sup {
-       top: -0.5em;
-     }
-     p {
-       margin-bottom: 1.5rem
-     }
-     p.manifest code {
-       display: block;
-       margin-bottom: 1.5rem;
-       max-width: 80ch;
-     }
-     .hero {
-       background: #263238;
-       font-color: #ffffff;
-       width: 100%;
+            <p>
+            This was in large part inspired by the suckless.org tools and philosophy.
+            To quote one part from their website:
+            </p>
 
-     }
-     .container {
-       display:flex;
-       flex-direction: column;
-       max-width: 80ch;
-       margin:auto;
-       padding: 0 1rem;
-     }
-     h1 {
-       font-size: 2em;
-       margin: 0.67em 0;
-     }
-     h1 { font-size: 3rem; }
-     h2 { font-size: 2.25rem; }
-     h3 { font-size: 1.5rem; }
-     h4 { font-size: 1.25rem; }
-     h5 { font-size: 1rem; }
-     h6 { font-size: .875rem; }
-     h1, h2, h3, h4 ,h5, h6 {
-       margin:0;
-       line-height: 1.5;
-     }
-     /* Forms
-        ========================================================================== */
+            <blockquote>Designing simple and elegant software is far more difficult than letting ad-hoc
+                or over-ambitious features obscure the code over time. However one has to pay
+                this price to achieve reliability and maintainability. Furthermore, minimalism
+                results in reasonable and attainable goals. We strive to maintain minimalism
+                and clarity to drive development to completion.</blockquote>
 
-     /**
-      * 1. Change the font styles in all browsers (opinionated).
-      * 2. Remove the margin in Firefox and Safari.
-      */
+            <p>And their Manifest:</p>
 
-     button,
-     input,
-     optgroup,
-     select,
-     textarea {
-       /*font-family: sans-serif; /* 1 */
-       font-size: 100%; /* 1 */
-       line-height: 1.15; /* 1 */
-       margin: 0; /* 2 */
-     }
+            <p class="manifest">
+            <code>
+                Many (open source) hackers are proud if they achieve large amounts of code,
+                because they believe the more lines of code they’ve written, the more progress
+                they have made. The more progress they have made, the more skilled they are.
+                This is simply a delusion.
+            </code>
+            <code>
+                Most hackers actually don’t care much about code quality. Thus, if they get
+                something working which seems to solve a problem, they stick with it. If this
+                kind of software development is applied to the same source code throughout its
+                entire life-cycle, we’re left with large amounts of code, a totally screwed code
+                structure, and a flawed system design. This is because of a lack of conceptual
+                clarity and integrity in the development process.
+            </code>
+            <code>
+                Code complexity is the mother of bloated, hard to use, and totally inconsistent
+                software. With complex code, problems are solved in suboptimal ways, valuable
+                resources are endlessly tied up, performance slows to a halt, and vulnerabilities
+                become a commonplace. The only solution is to scrap the entire project and
+                rewrite it from scratch.
+            </code>
 
-    </style>
-  </head>
-  <body>
-    <header class="hero">
-      <div class="container">
-        <h1>Genuine Tools<a href="https://github.com/genuinetools"></a></h1>
-        <p>We are the home of quality software with a focus on simplicity, usability, security and minimalism.</p>
-      </div>
-    </header>
+            <code>
+                The bad news: quality rewrites rarely happen, because hackers are proud of
+                large amounts of code. They think they understand the complexity in the code,
+                thus there’s no need to rewrite it. They think of themselves as masterminds,
+                understanding what others can never hope to grasp. To these types, complex
+                software is the ideal.
+            </code>
 
-    <div class="container"><blockquote>No bullshit, no politics, all genuine container tooling.</blockquote></div>
-    <div class="container">
-      <h5>Our projects abide by the following values:</h5>
-      <ul>
-        <li>Genuine solutions in a non-shitty way.</li>
-        <li>Simplicity.</li>
-        <li>Minimal dependencies.</li>
-        <li>Installable by a single binary -OR- a single binary in a container.</li>
-        <li>Easy to install.</li>
-        <li>Minimal design.</li>
-        <li>Clean, readable, auditable code.
-          <ul>
-            <li>Made by hackers with love that were just having fun.</li>
-          </ul>
-        </li>
-      </ul>
+            <code>
+                Ingenious ideas are simple. Ingenious software is simple. Simplicity is the
+                heart of the Unix philosophy. The more code lines you have removed, the more
+                progress you have made. As the number of lines of code in your software
+                shrinks, the more skilled you have become and the less your software sucks.
+            </code>
+            </p>
+        </div>
+        <script>
+/*!
+devtools-detect
+Detect if DevTools is open
+https://github.com/sindresorhus/devtools-detect
+by Sindre Sorhus
+MIT License
+*/
+(function () {
+    'use strict';
+    var devtools = {
+        open: false,
+        orientation: null
+    };
+    var threshold = 160;
+    var emitEvent = function (state, orientation) {
+        window.dispatchEvent(new CustomEvent('devtoolschange', {
+            detail: {
+                open: state,
+                orientation: orientation
+            }
+        }));
+    };
 
-      <p>
-        Come <a href="https://github.com/genuinetools">build genuinetools</a> with us :)
-      </p>
+    setInterval(function () {
+        var widthThreshold = window.outerWidth - window.innerWidth > threshold;
+        var heightThreshold = window.outerHeight - window.innerHeight > threshold;
+        var orientation = widthThreshold ? 'vertical' : 'horizontal';
 
-      <p>
-        <a href="https://releases.genuinetools.org">Download project releases here!</a>
-      </p>
+        if (!(heightThreshold && widthThreshold) &&
+            ((window.Firebug && window.Firebug.chrome && window.Firebug.chrome.isInitialized) || widthThreshold || heightThreshold)) {
+            if (!devtools.open || devtools.orientation !== orientation) {
+                emitEvent(true, orientation);
+            }
 
-      <h3>Our github organization is <a href="https://github.com/genuinetools">github.com/genuinetools</a>.</h3>
+            devtools.open = true;
+            devtools.orientation = orientation;
+        } else {
+            if (devtools.open) {
+                emitEvent(false, null);
+            }
 
-      <h5>
-        So far our projects include:
-      </h5>
-      <ul>
-        <li><a href="https://github.com/genuinetools/1up" target="_blank">1up</a></li>
-        <li><a href="https://github.com/genuinetools/amicontained" target="_blank">amicontained</a></li>
-        <li><a href="https://github.com/genuinetools/apk-file" target="_blank">apk-file</a></li>
-        <li><a href="https://github.com/genuinetools/audit" target="_blank">audit</a></li>
-        <li><a href="https://github.com/genuinetools/bane" target="_blank">bane</a></li>
-        <li><a href="https://github.com/genuinetools/binctr" target="_blank">binctr</a></li>
-        <li><a href="https://github.com/genuinetools/bpfd" target="_blank">bpfd</a></li>
-        <li><a href="https://github.com/genuinetools/bpfps" target="_blank">bpfps</a></li>
-        <li><a href="https://github.com/genuinetools/certok" target="_blank">certok</a></li>
-        <li><a href="https://github.com/genuinetools/contained.af" target="_blank">contained.af</a></li>
-        <li><a href="https://github.com/genuinetools/ghb0t" target="_blank">ghb0t</a></li>
-        <li><a href="https://github.com/genuinetools/img" target="_blank">img</a></li>
-        <li><a href="https://github.com/genuinetools/magneto" target="_blank">magneto</a></li>
-        <li><a href="https://github.com/genuinetools/netns" target="_blank">netns</a></li>
-        <li><a href="https://github.com/genuinetools/pepper" target="_blank">pepper</a></li>
-        <li><a href="https://github.com/genuinetools/pkg" target="_blank">pkg</a></li>
-        <li><a href="https://github.com/genuinetools/reg" target="_blank">reg</a></li>
-        <li><a href="https://github.com/genuinetools/releases" target="_blank">releases</a></li>
-        <li><a href="https://github.com/genuinetools/riddler" target="_blank">riddler</a></li>
-        <li><a href="https://github.com/genuinetools/sshb0t" target="_blank">sshb0t</a></li>
-        <li><a href="https://github.com/genuinetools/udict" target="_blank">udict</a></li>
-        <li><a href="https://github.com/genuinetools/upmail" target="_blank">upmail</a></li>
-        <li><a href="https://github.com/genuinetools/weather" target="_blank">weather</a></li>
-      </ul>
+            devtools.open = false;
+            devtools.orientation = null;
+        }
+    }, 500);
 
-      <p>
-        This was in large part inspired by the suckless.org tools and philosophy.
-        To quote one part from their website:
-      </p>
+    if (typeof module !== 'undefined' && module.exports) {
+        module.exports = devtools;
+    } else {
+        window.devtools = devtools;
+    }
+})();
 
-      <blockquote>Designing simple and elegant software is far more difficult than letting ad-hoc
-        or over-ambitious features obscure the code over time. However one has to pay
-        this price to achieve reliability and maintainability. Furthermore, minimalism
-        results in reasonable and attainable goals. We strive to maintain minimalism
-        and clarity to drive development to completion.</blockquote>
+        </script>
+        <script>
+            var gt = "                           _               __              __\n" +
+    "   ____ ____  ____  __  __(_)___  ___     / /_____  ____  / /____\n" +
+    "  / __ `/ _ \\/ __ \\/ / / / / __ \\/ _ \\   / __/ __ \\/ __ \\/ / ___/\n" +
+    " / /_/ /  __/ / / / /_/ / / / / /  __/  / /_/ /_/ / /_/ / (__  )\n" +
+    " \\__, /\\___/_/ /_/\\__,_/_/_/ /_/\\___/   \\__/\\____/\\____/_/____/\n" +
+    "/____/"
 
-      <p>And their Manifest:</p>
-
-      <p class="manifest">
-        <code>
-Many (open source) hackers are proud if they achieve large amounts of code,
-because they believe the more lines of code they’ve written, the more progress
-they have made. The more progress they have made, the more skilled they are.
-This is simply a delusion.
-        </code>
-        <code>
-Most hackers actually don’t care much about code quality. Thus, if they get
-something working which seems to solve a problem, they stick with it. If this
-kind of software development is applied to the same source code throughout its
-entire life-cycle, we’re left with large amounts of code, a totally screwed code
-structure, and a flawed system design. This is because of a lack of conceptual
-clarity and integrity in the development process.
-        </code>
-        <code>
-Code complexity is the mother of bloated, hard to use, and totally inconsistent
-software. With complex code, problems are solved in suboptimal ways, valuable
-resources are endlessly tied up, performance slows to a halt, and vulnerabilities
-become a commonplace. The only solution is to scrap the entire project and
-rewrite it from scratch.
-        </code>
-
-        <code>
-The bad news: quality rewrites rarely happen, because hackers are proud of
-large amounts of code. They think they understand the complexity in the code,
-thus there’s no need to rewrite it. They think of themselves as masterminds,
-understanding what others can never hope to grasp. To these types, complex
-software is the ideal.
-        </code>
-
-        <code>
-Ingenious ideas are simple. Ingenious software is simple. Simplicity is the
-heart of the Unix philosophy. The more code lines you have removed, the more
-progress you have made. As the number of lines of code in your software
-shrinks, the more skilled you have become and the less your software sucks.
-        </code>
-      </p>
-    </div>
-    <script>
-     /*!
-	devtools-detect
-	Detect if DevTools is open
-	https://github.com/sindresorhus/devtools-detect
-	by Sindre Sorhus
-	MIT License
-      */
-     (function () {
-       'use strict';
-       var devtools = {
-	 open: false,
-	 orientation: null
-       };
-       var threshold = 160;
-       var emitEvent = function (state, orientation) {
-	 window.dispatchEvent(new CustomEvent('devtoolschange', {
-	   detail: {
-	     open: state,
-	     orientation: orientation
-	   }
-	 }));
-       };
-
-       setInterval(function () {
-	 var widthThreshold = window.outerWidth - window.innerWidth > threshold;
-	 var heightThreshold = window.outerHeight - window.innerHeight > threshold;
-	 var orientation = widthThreshold ? 'vertical' : 'horizontal';
-
-	 if (!(heightThreshold && widthThreshold) &&
-             ((window.Firebug && window.Firebug.chrome && window.Firebug.chrome.isInitialized) || widthThreshold || heightThreshold)) {
-	   if (!devtools.open || devtools.orientation !== orientation) {
-	     emitEvent(true, orientation);
-	   }
-
-	   devtools.open = true;
-	   devtools.orientation = orientation;
-	 } else {
-	   if (devtools.open) {
-	     emitEvent(false, null);
-	   }
-
-	   devtools.open = false;
-	   devtools.orientation = null;
-	 }
-       }, 500);
-
-       if (typeof module !== 'undefined' && module.exports) {
-	 module.exports = devtools;
-       } else {
-	 window.devtools = devtools;
-       }
-     })();
-
-    </script>
-    <script>
-     var gt = "                           _               __              __\n" +
-              "   ____ ____  ____  __  __(_)___  ___     / /_____  ____  / /____\n" +
-              "  / __ `/ _ \\/ __ \\/ / / / / __ \\/ _ \\   / __/ __ \\/ __ \\/ / ___/\n" +
-              " / /_/ /  __/ / / / /_/ / / / / /  __/  / /_/ /_/ / /_/ / (__  )\n" +
-              " \\__, /\\___/_/ /_/\\__,_/_/_/ /_/\\___/   \\__/\\____/\\____/_/____/\n" +
-              "/____/"
-
-              var printed = false;
-     window.addEventListener('devtoolschange', function (e) {
-       if(e.detail.open) { printed = true; console.log(gt); }
-     });
-    </script>
-  </body>
+var printed = false;
+window.addEventListener('devtoolschange', function (e) {
+    if(e.detail.open) { printed = true; console.log(gt); }
+});
+        </script>
+    </body>
 </html>
